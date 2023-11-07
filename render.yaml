@@ -91,7 +91,7 @@ services:
 
   # A Redis instance
   - type: redis
-    name: movie-redis-cache
+    name: redis-cache
     region: frankfurt
     ipAllowList: # required
       - source: 0.0.0.0/0
