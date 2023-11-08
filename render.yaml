@@ -4,7 +4,6 @@ services:
     runtime: docker
     region: frankfurt
     plan: free
-    healthCheckPath: /
     envVars:
       - key: REDIS_HOST
         fromService:
@@ -50,7 +49,6 @@ services:
       url: ghcr.io/harshanani007/moviereviewserver:latest
     region: frankfurt
     plan: free
-    healthCheckPath: /
     envVars:
       - key: REDIS_HOST
         fromService:
