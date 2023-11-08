@@ -37,4 +37,5 @@ com\example\server\models\CastRepository.class
 com\example\server\models\Review.class
 com\example\server\auth\CustomUserDetails.class
 com\example\server\controllers\AuthController.class
+com\example\server\config\DataSourceConfig.class
 com\example\server\dto\MovieGenreDto.class
