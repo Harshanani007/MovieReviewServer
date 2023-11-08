@@ -15,6 +15,7 @@ com\example\server\models\GenreRepository.class
 com\example\server\models\UserRepository.class
 com\example\server\controllers\ReviewController.class
 com\example\server\SpringMainApplication.class
+com\example\server\controllers\HealthCheckController.class
 com\example\server\models\MovieRepository.class
 com\example\server\models\Trending.class
 com\example\server\models\Genre.class

@@ -20,6 +20,7 @@ C:\Users\Harshavardhan Reddy\OneDrive\Desktop\render 1\Movie Review Aggregator\s
 C:\Users\Harshavardhan Reddy\OneDrive\Desktop\render 1\Movie Review Aggregator\server\src\main\java\com\example\server\models\Admin.java
 C:\Users\Harshavardhan Reddy\OneDrive\Desktop\render 1\Movie Review Aggregator\server\src\main\java\com\example\server\SpringMainApplication.java
 C:\Users\Harshavardhan Reddy\OneDrive\Desktop\render 1\Movie Review Aggregator\server\src\main\java\com\example\server\config\RedisConfig.java
+C:\Users\Harshavardhan Reddy\OneDrive\Desktop\render 1\Movie Review Aggregator\server\src\main\java\com\example\server\controllers\HealthCheckController.java
 C:\Users\Harshavardhan Reddy\OneDrive\Desktop\render 1\Movie Review Aggregator\server\src\main\java\com\example\server\models\TrendingRepository.java
 C:\Users\Harshavardhan Reddy\OneDrive\Desktop\render 1\Movie Review Aggregator\server\src\main\java\com\example\server\models\ReviewRepository.java
 C:\Users\Harshavardhan Reddy\OneDrive\Desktop\render 1\Movie Review Aggregator\server\src\main\java\com\example\server\config\JwtTokenUtil.java
