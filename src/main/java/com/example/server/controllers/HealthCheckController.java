@@ -6,9 +6,14 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 
+import org.springframework.beans.factory.annotation.Value;
+
 @Controller
 @ResponseBody
 public class HealthCheckController {
+
+    @Value("${REDIS_HOST}")
+    String redishost;
 
     @GetMapping("/")
     public ResponseEntity<String> healthCheck1() {

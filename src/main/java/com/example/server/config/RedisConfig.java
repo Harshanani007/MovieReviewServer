@@ -9,12 +9,15 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 
+import org.springframework.beans.factory.annotation.Value;
+
 @Configuration
 public class RedisConfig {
+  @Value("${REDIS_HOST}")
+  private String redisHost;
 
-  private String redisHost = "localhost";
-
-  private int redisPort = 6379;
+  @Value("${REDIS_PORT}")
+  private int redisPort;
 
   @Bean
   public RedisConnectionFactory redisConnectionFactory() {
