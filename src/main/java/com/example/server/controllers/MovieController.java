@@ -18,7 +18,7 @@ import java.util.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 
-@CrossOrigin(origins =  {"${MY_APP_BASE_URL}"})
+@CrossOrigin(origins = { "${MY_APP_BASE_URL}" })
 @Controller
 @ResponseBody
 public class MovieController {
@@ -60,7 +60,7 @@ public class MovieController {
     // retrives all the movie
     @GetMapping("/api/movies")
     public ResponseEntity<List<Movie>> getAllMovies() {
-        List<Movie> movies = movieRepository.findAll();
+        List<Movie> movies = (List<Movie>) movieRepository.findAll();
         if (movies.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
@@ -77,7 +77,7 @@ public class MovieController {
     // retrives movie that has rating greater than 4
     @GetMapping("api/movies/recommendation")
     public ResponseEntity<List<Movie>> getMoviesForRecommendation() {
-        List<Movie> movies = movieRepository.findAll();
+        List<Movie> movies = (List<Movie>) movieRepository.findAll();
         List<Movie> rMovies = new ArrayList<>();
         for (Movie mov : movies) {
             if (mov != null) {
@@ -236,4 +236,3 @@ public class MovieController {
      */
 
 }
-

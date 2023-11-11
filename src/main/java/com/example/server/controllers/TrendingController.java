@@ -18,7 +18,7 @@ import com.example.server.models.ReviewRepository;
 import com.example.server.models.Trending;
 import com.example.server.models.TrendingRepository;
 
-@CrossOrigin(origins =  {"${MY_APP_BASE_URL}"})
+@CrossOrigin(origins = { "${MY_APP_BASE_URL}" })
 @Controller
 @ResponseBody
 public class TrendingController {
@@ -69,7 +69,7 @@ public class TrendingController {
     // list of trending movies
     @GetMapping("/api/trending")
     public ResponseEntity<List<Movie>> getAllTrendingMovies() {
-        List<Trending> trendingMovies = trendingRepository.findAll();
+        List<Trending> trendingMovies = (List<Trending>) trendingRepository.findAll();
         List<Movie> movies = new ArrayList<>();
 
         for (Trending trending : trendingMovies) {

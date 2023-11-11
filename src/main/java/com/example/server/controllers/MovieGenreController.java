@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.example.server.models.Genre;
 import com.example.server.models.GenreRepository;
 
-@CrossOrigin(origins =  {"${MY_APP_BASE_URL}"})
+@CrossOrigin(origins = { "${MY_APP_BASE_URL}" })
 @Controller
 @ResponseBody
 public class MovieGenreController {
@@ -37,7 +37,7 @@ public class MovieGenreController {
 
     @GetMapping("api/genre")
     public ResponseEntity<List<Genre>> findAllGenre() {
-        List<Genre> genres = genreRepository.findAll();
+        List<Genre> genres = (List<Genre>) genreRepository.findAll();
         return new ResponseEntity<>(genres, HttpStatus.OK);
 
     }
