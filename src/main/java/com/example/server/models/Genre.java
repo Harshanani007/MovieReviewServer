@@ -16,7 +16,9 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
+import org.springframework.data.redis.core.RedisHash;
 
+@RedisHash("Genre")
 @Entity
 public class Genre {
 
@@ -24,23 +26,22 @@ public class Genre {
     @GeneratedValue(strategy = GenerationType.UUID)
     public String genreId;
     private String category;
-    
-     @ManyToOne(fetch = FetchType.LAZY,optional = false)
-    @JoinColumn(name="movieId",nullable = false)
+
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "movieId", nullable = false)
     @OnDelete(action = OnDeleteAction.CASCADE)
     @JsonIgnore
     private Movie movie;
 
-   
     protected Genre() {
-        
+
     }
 
-    public Genre(String genreId, String category,Movie movie) {
+    public Genre(String genreId, String category, Movie movie) {
         this.genreId = genreId;
         this.category = category;
         this.movie = movie;
-          
+
     }
 
     public String getGenreId() {
@@ -66,7 +67,5 @@ public class Genre {
     public void setMovie(Movie movie) {
         this.movie = movie;
     }
-
-   
 
 }

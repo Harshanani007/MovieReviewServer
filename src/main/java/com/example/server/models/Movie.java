@@ -24,7 +24,9 @@ import jakarta.persistence.OneToOne;
 import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
 import jakarta.persistence.Transient;
+import org.springframework.data.redis.core.RedisHash;
 
+@RedisHash("Movie")
 @Entity
 public class Movie {
   @Id

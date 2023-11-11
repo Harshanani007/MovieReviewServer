@@ -19,7 +19,9 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.Transient;
 import jakarta.validation.constraints.NotNull;
+import org.springframework.data.redis.core.RedisHash;
 
+@RedisHash("Review")
 @Entity
 public class Review {
 

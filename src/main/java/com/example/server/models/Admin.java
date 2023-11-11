@@ -2,7 +2,9 @@ package com.example.server.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import org.springframework.data.redis.core.RedisHash;
 
+@RedisHash("Admin")
 @Entity
 public class Admin {
   @Id
