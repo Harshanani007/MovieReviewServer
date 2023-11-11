@@ -16,7 +16,7 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import org.springframework.data.redis.core.RedisHash;
 
-@RedisHash("Cast")
+//@RedisHash("Cast")
 @Entity
 @Table(name = "movie_cast")
 public class Cast {

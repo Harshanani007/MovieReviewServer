@@ -11,7 +11,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
 import org.springframework.data.redis.core.RedisHash;
 
-@RedisHash("Trending")
+//@RedisHash("Trending")
 @Entity
 public class Trending {
     @Id

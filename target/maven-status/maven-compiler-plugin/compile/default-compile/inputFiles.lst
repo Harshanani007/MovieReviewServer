@@ -13,7 +13,6 @@ C:\Users\Harshavardhan Reddy\OneDrive\Desktop\render 1\Movie Review Aggregator\s
 C:\Users\Harshavardhan Reddy\OneDrive\Desktop\render 1\Movie Review Aggregator\server\src\main\java\com\example\server\config\CustomPasswordEncoder.java
 C:\Users\Harshavardhan Reddy\OneDrive\Desktop\render 1\Movie Review Aggregator\server\src\main\java\com\example\server\config\SecurityConfig.java
 C:\Users\Harshavardhan Reddy\OneDrive\Desktop\render 1\Movie Review Aggregator\server\src\main\java\com\example\server\auth\CustomUserDetails.java
-C:\Users\Harshavardhan Reddy\OneDrive\Desktop\render 1\Movie Review Aggregator\server\src\main\java\com\example\server\models\RedisCast.java
 C:\Users\Harshavardhan Reddy\OneDrive\Desktop\render 1\Movie Review Aggregator\server\src\main\java\com\example\server\auth\UserDetailsServiceImpl.java
 C:\Users\Harshavardhan Reddy\OneDrive\Desktop\render 1\Movie Review Aggregator\server\src\main\java\com\example\server\config\JwtAuthorizationFilter.java
 C:\Users\Harshavardhan Reddy\OneDrive\Desktop\render 1\Movie Review Aggregator\server\src\main\java\com\example\server\controllers\TrendingController.java

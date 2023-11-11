@@ -21,7 +21,7 @@ import jakarta.persistence.Transient;
 import jakarta.validation.constraints.NotNull;
 import org.springframework.data.redis.core.RedisHash;
 
-@RedisHash("Review")
+//@RedisHash("Review")
 @Entity
 public class Review {
 

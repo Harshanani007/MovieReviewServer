@@ -6,7 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 
-public interface MovieRepository extends CrudRepository<Movie, String> {
+public interface MovieRepository extends JpaRepository<Movie, String> {
 
   List<Movie> findByTitle(String title);
 

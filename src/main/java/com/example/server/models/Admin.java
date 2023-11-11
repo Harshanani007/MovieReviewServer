@@ -4,7 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import org.springframework.data.redis.core.RedisHash;
 
-@RedisHash("Admin")
+//@RedisHash("Admin")
 @Entity
 public class Admin {
   @Id

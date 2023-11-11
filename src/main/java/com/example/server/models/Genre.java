@@ -18,7 +18,7 @@ import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import org.springframework.data.redis.core.RedisHash;
 
-@RedisHash("Genre")
+//@RedisHash("Genre")
 @Entity
 public class Genre {
 

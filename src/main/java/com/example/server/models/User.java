@@ -5,7 +5,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import org.springframework.data.redis.core.RedisHash;
 
-@RedisHash("User")
+//@RedisHash("User")
 @Entity
 @Table(name = "movie_user")
 public class User {
